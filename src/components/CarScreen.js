@@ -21,6 +21,7 @@ class CarScreen extends Component {
             //TODO: Render info stuff
             return (
                 <div className="container">
+                    <ScrollButton onClick={this.scrollUp.bind(this)} up={true} />
                     <EntertainmentInfo />
                 </div>
             );
@@ -40,6 +41,11 @@ class CarScreen extends Component {
     scrollDown(e) {
         e.preventDefault();
         this.setState({ scrolledDown: true });
+    }
+
+    scrollUp(e) {
+        e.preventDefault();
+        this.setState({ scrolledDown: false });
     }
 };
 

@@ -10,12 +10,12 @@ const EntertainmentInfo = (props) => {
     const backupImageUrl = "http://manager.vidibuscloud.net/mediafiles/6893/7072/6215/8d54b91072ea0136871e543d7edaf0a0/livestream-dbbl-freiburg_1024x576.jpg";
 
     return (
-        <div>
+        <div className="row">
             {
                 live_events.map(
                     (event, i) => {
                         try {
-                            return <SportEvent sport_type={event.tags.Sportart[0]} image_url={event.images[0]} start_time={new Date(event.starts_at)} key={i} />
+                            return <SportEvent sport_type={event.tags.Sportart[0]} image_url={event.images.slice(-1)[0]} sport_url={event.path} start_time={new Date(event.starts_at)} key={i} />
                         }
                         catch(err) {
                             return <SportEvent sport_type={"Basketball"} image_url={backupImageUrl} start_time={new Date(event.starts_at)} key={i} />
@@ -26,6 +26,6 @@ const EntertainmentInfo = (props) => {
         </div>
     )
 }
-
+// 140x80
 
 export default EntertainmentInfo;

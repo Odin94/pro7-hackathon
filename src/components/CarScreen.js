@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Header from './Header';
 import Eta from './Eta';
 import Location from './Location';
@@ -7,16 +7,35 @@ import ScrollButton from './ScrollButton';
 
 import fullMap from '../assets/map_full.png'
 
-const CarScreen = function(props) {
-    return (
-        <div class="container">
-            <Header destinationName="ibis Hotel Garching" />
-            <Location image={fullMap} />
-            <Eta time="20:00"/>
-            <EnvironmentInfo />
-            <ScrollButton />
-        </div>
-    );
+class CarScreen extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            scrolledDown: false
+        };
+    }
+
+    render() {
+        if(this.state.scrolledDown) {
+            //TODO: Render info stuff
+            return (<div></div>);
+        }
+
+        return (
+            <div class="container">
+                <Header destinationName="ibis Hotel Garching" />
+                <Location image={fullMap} />
+                <Eta time="20:00"/>
+                <EnvironmentInfo />
+                <ScrollButton onClick={this.scrollDown.bind(this)}/>
+            </div>
+        );
+    }
+
+    scrollDown(e) {
+        e.preventDefault();
+        this.setState({ scrolledDown: true });
+    }
 };
 
 export default CarScreen;

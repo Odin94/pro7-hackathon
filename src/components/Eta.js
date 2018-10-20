@@ -11,7 +11,7 @@ const ETA = ({time}) => {
             </div>
             <div className="col" style={styles.eta.time}>{time}</div>
         </section>
-    )
+    );
 }
 
 const styles = {

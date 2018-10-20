@@ -1,12 +1,11 @@
 import React from 'react';
-import mapAirport from '../assets/map_airport.png'
 
 const Location = (props) => {
 
 
     return (
         <div>
-            <img src={mapAirport} />
+            <img style={{boxShadow: '2px 2px rgba(0,0,0,0.2)', width: '100%'}}src={props.image} />
         </div>
     )
 }

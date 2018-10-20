@@ -18,7 +18,7 @@ const EntertainmentInfo = (props) => {
                             return <SportEvent sport_type={event.tags.Sportart[0]} image_url={event.images.slice(-1)[0]} sport_url={event.path} start_time={new Date(event.starts_at)} key={i} />
                         }
                         catch(err) {
-                            return <SportEvent sport_type={"Basketball"} image_url={backupImageUrl} start_time={new Date(event.starts_at)} key={i} />
+                            return <SportEvent sport_type={"Basketball"} image_url={backupImageUrl} sport_url="" start_time={new Date(event.starts_at)} key={i} />
                         }
                     }
                 )

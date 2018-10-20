@@ -10,8 +10,5 @@ const EntertainmentInfo = (props) => {
     )
 }
 
-EntertainmentInfo.propTypes = {
-    
-}
 
 export default EntertainmentInfo;

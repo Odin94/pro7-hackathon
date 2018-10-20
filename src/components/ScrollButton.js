@@ -10,8 +10,5 @@ const ScrollButton = (props) => {
     )
 }
 
-ScrollButton.propTypes = {
-    
-}
 
 export default ScrollButton;

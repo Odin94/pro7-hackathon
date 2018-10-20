@@ -10,8 +10,5 @@ const ETA = (props) => {
     )
 }
 
-ETA.propTypes = {
-    
-}
 
 export default ETA;

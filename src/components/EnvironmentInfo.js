@@ -10,8 +10,5 @@ const EnvironmentInfo = (props) => {
     )
 }
 
-EnvironmentInfo.propTypes = {
-    
-}
 
 export default EnvironmentInfo;

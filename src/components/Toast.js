@@ -10,8 +10,5 @@ const Toast = (props) => {
     )
 }
 
-Toast.propTypes = {
-    
-}
 
 export default Toast;

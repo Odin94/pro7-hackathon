@@ -10,8 +10,5 @@ const CarInfo = (props) => {
     )
 }
 
-CarInfo.propTypes = {
-    
-}
 
 export default CarInfo;

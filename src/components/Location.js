@@ -10,8 +10,5 @@ const Location = (props) => {
     )
 }
 
-Location.propTypes = {
-    
-}
 
 export default Location;

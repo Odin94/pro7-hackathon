@@ -7,7 +7,6 @@ import Textfield from './Textfield';
 import Location from './Location';
 import CarInfo from'./CarInfo';
 import Toast from './Toast';
-import EnvironmentInfo from './EnvironmentInfo';
 
 const ArrivalScreen = function(props) {
     return (

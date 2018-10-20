@@ -7,9 +7,9 @@ const Textfield = ({headline, paragraph}) => {
     } */
 
     return (
-        <section className="text-field row">
+        <section className="text-field">
             <h3>{ headline }</h3>
-            <p>{ paragraph }</p>
+            <p style={{fontSize: '14px'}}>{ paragraph }</p>
         </section>
     )
 }

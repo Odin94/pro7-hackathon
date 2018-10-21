@@ -7,7 +7,7 @@ const ScrollButton = (props) => {
     return (
         <div className="row">
             <a href="#" onClick={props.onClick} style={{color: AppStyles.darkBlue, fontSize: '64px', textAlign: 'center', margin: 'auto', marginTop: '15px'}}>
-                <i className={icon}></i>
+                <i className={icon} style={{color: AppStyles.softBlue}}></i>
             </a>
         </div>
     )

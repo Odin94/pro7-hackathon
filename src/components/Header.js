@@ -1,10 +1,13 @@
 import React from 'react';
 import AppStyles from './../AppStyles';
 
+import icon from '../assets/icon.png';
+
 const Header = function({destinationName}) {
     return (
         <div>
             <div className="row" style={styles.headline.row}>
+                <img style={{marginLeft: '10px'}} src={icon}/>
                 <span style={styles.headline.text}>BEAMING YOU TO ...</span>                
             </div>
             <div className="row" style={styles.destination.row}>
@@ -25,6 +28,7 @@ const styles = {
         },
         text: {
             margin: 'auto',
+            marginLeft: '0',
             fontWeight: 'bold',
             fontSize: '30px',
             color: '#fff'
@@ -32,13 +36,15 @@ const styles = {
     },
     destination: {
         row: {
+            marginLeft: '5px',
             marginTop: '10px'
         },
         image: {
             marginTop: '5px',
             fontSize: '20px',
             marginLeft: '10px',
-            marginRight: '20px'
+            marginRight: '20px',
+            color: AppStyles.softBlue
         },
         text: {
             fontSize: '20px'

@@ -1,4 +1,5 @@
 import React from 'react';
+import AppStyles from '../AppStyles';
 
 const ETA = ({time}) => {
 
@@ -18,7 +19,8 @@ const styles = {
     eta: {
         fontSize: '3em',
         clockIcon: {
-            marginRight: '15px'
+            marginRight: '15px',
+            color: AppStyles.softBlue
         },
         time: {
             textAlign: 'center'

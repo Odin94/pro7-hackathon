@@ -9,5 +9,4 @@ const Location = ({enterCar, image}) => {
     )
 }
 
-
 export default Location;

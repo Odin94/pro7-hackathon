@@ -7,7 +7,7 @@ const Textfield = ({headline, paragraph}) => {
     } */
 
     return (
-        <section className="text-field">
+        <section className="text-field" style={{marginTop: '5px'}}>
             <h3>{ headline }</h3>
             <p style={{fontSize: '14px'}}>{ paragraph }</p>
         </section>

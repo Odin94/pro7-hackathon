@@ -1,15 +1,30 @@
-import React from 'react';
-import AppStyles from '../AppStyles';
+import React, { Component } from 'react';
 
-const Toast = (props) => {
+class Toast extends Component {
+    constructor(props) {
+        super(props);
 
+        this.state = {
+            classNames: "row toast toast-shown"
+        };
+    }
 
-    return (
-        <div style={{backgroundColor: AppStyles.brightRed, padding: '5px', marginTop: '5px'}}>
-            {props.message}
-        </div>
-    )
+    componentDidMount() {
+        window.setTimeout(() => {
+            this.setState({
+                classNames: "row toast toast-fading-out"
+            });    
+        }, 2000);
+        
+    }
+
+    render() {
+        return (
+            <div className={this.state.classNames}>
+                {this.props.message}
+            </div>
+        );
+    }
 }
-
 
 export default Toast;

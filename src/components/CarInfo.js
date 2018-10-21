@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const CarInfo = (props) => {
+class CarInfo extends Component {
+    constructor(props) {
+        super(props);        
+    }
 
-
-    return (
-        <div>
-            <div className="row" style={{marginTop: '10px'}}>
-                <div className="col-3">
-                    <img src={props.carImg}></img>
-                </div>
-                <div className="col-9 align-self-center">
-                    <span style={{marginLeft: '30px', fontSize: '18px'}}>{props.carName}</span>
+    render() {
+        return (
+            <div>
+                <div className="row" style={{marginTop: '10px'}}>
+                    <div className="col-3">
+                        <img style={{borderRadius: '4px', borderWidth: '2px', borderColor: '#000'}} src={this.props.carImg}></img>
+                    </div>
+                    <div className="col-9 align-self-center">
+                        <span style={{marginLeft: '30px', fontSize: '18px'}}>{this.props.carName}</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    )
+        )
+    }
 }
-
 
 export default CarInfo;

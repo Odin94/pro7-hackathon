@@ -16,10 +16,10 @@ const ArrivalScreen = function({enterCar}) {
         </header>
         <Textfield headline="Your car is waiting for you" paragraph=""/>
         <Location image={mapAirport} enterCar={enterCar}/>
-        <Textfield headline="Parkhaus P1" paragraph="   250 meters, ETA: 4 minutes"/>
+        <Textfield headline="Parkhaus P1" paragraph=""/>
+        <Textfield headline="250 meters, ETA: 4 minutes" />
         <CarInfo carName="Mercedes Benz AMG CLA" carImg={mercedesImg} />
         <Toast message="Your hotel and host have been notified of your arrival" />
-        <Toast message="You will find another NFC Tag in your car. Please tap your phone against it when you enter the car." />        
       </div>
     );
 };

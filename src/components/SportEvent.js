@@ -19,6 +19,7 @@ const SportEvent = ({sportType, imageUrl, startTime, sportUrl}) => {
             textShadow: '2px 2px black',
             fontSize: '1.3rem',
             padding: 0,
+            border: '1px rgba(0,0,0,1) solid',
 
             darkOverlay: {
                 padding: 0,

@@ -20,7 +20,6 @@ class CarScreen extends Component {
 
     render() {
         if(this.state.scrolledDown) {
-            //TODO: Render info stuff
             return (
                 <div className="container">
                     <ScrollButton onClick={this.scrollUp.bind(this)} up={true} />

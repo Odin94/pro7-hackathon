@@ -12,7 +12,7 @@ const EntertainmentInfo = (props) => {
     return (
         <div className="container" style={ { boxShadow: '2px 2px 2px 2px rgba(0,0,0,0.2)', marginTop: "45px", padding: "15px", paddingBottom: "15px" } }>
             <h3>Live Sports</h3>
-            <div className="row" style={{paddingRight: "0", paddingLeft: "0"}}>
+            <div className="row" style={{paddingRight: "15px", paddingLeft: "15px"}}>
                 {
                     live_events.map(
                         (event, i) => {

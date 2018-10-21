@@ -21,15 +21,6 @@ class App extends Component {
 
   render() {
     return this.state.inCar ? <CarScreen/> : <ArrivalScreen enterCar={() => {this.enterCar()}}/>;
-    /*if (this.state.inCar) {
-      screen = <CarScreen/>
-    } else {
-      screen = <ArrivalScreen enterCar={() => {this.enterCar()}}/>
-    }
-
-    return (
-      screen
-    );*/
   }
 }
 

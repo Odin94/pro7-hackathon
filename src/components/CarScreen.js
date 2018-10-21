@@ -7,6 +7,8 @@ import EnvironmentInfo from './EnvironmentInfo';
 import ScrollButton from './ScrollButton';
 
 import fullMap from '../assets/map_full.png'
+import WeatherForecast from './WeatherForecast';
+import Textfield from './Textfield';
 
 class CarScreen extends Component {
     constructor(props) {
@@ -22,6 +24,8 @@ class CarScreen extends Component {
             return (
                 <div className="container">
                     <ScrollButton onClick={this.scrollUp.bind(this)} up={true} />
+                    <Textfield headline={"Event Info"} paragraph={"Please remember to bring your laptop to the event. \n\n\nCatering will be provided on site. Showers and beds will be available. Please make sure to check in before 9pm."}/>
+                    <WeatherForecast />
                     <EntertainmentInfo />
                 </div>
             );

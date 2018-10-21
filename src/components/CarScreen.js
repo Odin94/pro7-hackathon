@@ -31,7 +31,7 @@ class CarScreen extends Component {
             <div className="container">
                 <Header destinationName="ibis Hotel Garching" />
                 <Location image={fullMap} />
-                <Eta time="20:00"/>
+                <Eta time="18:00"/>
                 <EnvironmentInfo />
                 <ScrollButton onClick={this.scrollDown.bind(this)}/>
             </div>

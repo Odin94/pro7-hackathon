@@ -25,7 +25,7 @@ const SportEvent = ({sportType, imageUrl, startTime, sportUrl}) => {
                 margin: 0,
                 height: '100%',
                 width: '100%',
-                backgroundColor: 'rgba(0, 0, 0, 0.2'
+                backgroundColor: 'rgba(0, 0, 0, 0.2)'
             },
 
             time: {

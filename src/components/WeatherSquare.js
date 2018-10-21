@@ -14,10 +14,10 @@ const WeatherSquare = ({imageUrl, day, temperature}) => {
                 margin: 0,
                 height: '94px',
                 width: '100%',
-                //backgroundColor: 'rgba(0, 0, 0, 0.1)',
 
                 backgroundImage: `url(${imageUrl})`,
                 backgroundSize: '137px 94px',
+                backgroundRepeat: "no-repeat",
             },
 
             day: {
